@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Elijah Williams.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
@@ -27,3 +27,23 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+import rosegraphics as rg
+
+larry = rg.SimpleTurtle('classic')
+larry.pen = rg.Pen('violet', 3)
+larry.speed = 20
+terry = rg.SimpleTurtle('turtle')
+terry.pen = rg.Pen('red', 3)
+terry.speed = 20
+for k in range(26):
+    larry.draw_circle(13)
+    larry.pen_up()
+    larry.right(15)
+    larry.forward(10)
+    larry.pen_down()
+    terry.draw_square(13)
+    terry.pen_up()
+    terry.left(15)
+    terry.forward(10)
+    terry.pen_down()
+
